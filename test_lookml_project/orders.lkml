@@ -1,4 +1,4 @@
-view: orders {
+view: fct_orders {
   sql_table_name: analytics.orders ;;
 
   dimension: order_id {
