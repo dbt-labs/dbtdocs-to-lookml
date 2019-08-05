@@ -44,11 +44,11 @@ def get_column_description(manifest, model_name, column_name):
         return None
 
 
-# load the lookml into memeory
+# load the lookml
 with open('test_lookml_project/orders.lkml', 'r') as file:
     lookml = lkml.load(file)
 
-# lood the yaml into memory
+# load the manifest.json file
 
 manifest = _get_manifest(PATH_TO_DBT_PROJECT)
 
@@ -67,7 +67,7 @@ with open('target/new_orders.lkml', 'w+') as file:
 
 
 
-# how to handle:
-# - what's a reasonable assumption for matching views to models? the view name?
-# - yaml from multiple files
-# - what happens if a model has definitions in multiple places?
+# To-do:
+# - multiple lkml files
+# - parameterize the paths / add a cli
+# - Consider what is a reasonable assumption for matching views to models? the view name?
