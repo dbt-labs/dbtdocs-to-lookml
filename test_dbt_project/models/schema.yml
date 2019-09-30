@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: orders
+    columns:
+      - name: order_id
+        description: "This is a unique identifier for an order"
+
+      - name: amount
+        description: "Total amount (AUD) of the order"
